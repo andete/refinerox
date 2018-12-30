@@ -1,8 +1,8 @@
 extern crate yew;
-extern crate refinerox;
+extern crate refinerox_front;
 
 use yew::prelude::*;
-use refinerox::Model;
+use refinerox_front::Model;
 
 fn main() {
     yew::initialize();

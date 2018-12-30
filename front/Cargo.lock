@@ -152,7 +152,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "refinerox"
+name = "refinerox-front"
 version = "0.1.0"
 dependencies = [
  "yew 0.5.0",
