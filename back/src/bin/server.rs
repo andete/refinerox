@@ -1,5 +1,8 @@
+// (c) 2019 Joost Yervante Damad <joost@damad.be>
+
 extern crate actix_web;
-use actix_web::{server, App, HttpRequest};
+
+use actix_web::{App, HttpRequest, server};
 
 fn index(_req: &HttpRequest) -> &'static str {
     "Hello world!"
