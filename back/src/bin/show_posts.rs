@@ -1,4 +1,4 @@
-use refinerox_back::models::*;
+use refinerox_back::model::*;
 use diesel::prelude::*;
 
 fn main() {

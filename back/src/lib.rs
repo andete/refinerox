@@ -5,15 +5,15 @@ extern crate diesel;
 
 pub mod db;
 pub mod schema;
-pub mod models;
+pub mod model;
 
 use diesel::prelude::*;
 use diesel::pg::PgConnection;
 
-pub fn create_post<'a>(conn: &PgConnection, title: &'a str, body: &'a str) -> models::Post {
+pub fn create_post<'a>(conn: &PgConnection, title: &'a str, body: &'a str) -> model::Post {
     use self::schema::posts;
 
-    let new_post = models::NewPost {
+    let new_post = model::insert::NewPost {
         title: title,
         body: body,
     };
