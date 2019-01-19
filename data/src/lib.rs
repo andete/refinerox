@@ -1,7 +1,7 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+// (c) 2019 Joost Yervante Damad <joost@damad.be>
+
+#![allow(proc_macro_derive_resolution_fallback)]
+#[macro_use]
+extern crate diesel;
+
+pub mod model;

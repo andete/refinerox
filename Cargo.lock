@@ -1009,16 +1009,21 @@ dependencies = [
  "actix-web 0.7.18 (registry+https://github.com/rust-lang/crates.io-index)",
  "diesel 1.3.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "dotenv 0.13.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "refinerox-data 0.1.0",
 ]
 
 [[package]]
 name = "refinerox-data"
 version = "0.1.0"
+dependencies = [
+ "diesel 1.3.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
 
 [[package]]
 name = "refinerox-front"
 version = "0.1.0"
 dependencies = [
+ "refinerox-data 0.1.0",
  "yew 0.5.0",
 ]
 
